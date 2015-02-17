@@ -13,6 +13,11 @@
 - (void)awakeFromNib
 {
     self.imageView.layer.cornerRadius = self.imageView.bounds.size.height / 2;
+    
+}
+
+- (void)layoutSubviews {
+    [self layoutIfNeeded];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
