@@ -7,8 +7,11 @@
 //
 
 #import "TableViewViewController.h"
+#import "SerieTableViewCell.h"
 
 @interface TableViewViewController ()
+
+@property (weak, nonatomic) IBOutlet UITableView *seriesTableView;
 
 @end
 
@@ -16,7 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+ 
+    [self.seriesTableView registerClass:[SerieTableViewCell class] forCellReuseIdentifier:kSerieCellId];
+    
 }
 
 - (void)didReceiveMemoryWarning {
