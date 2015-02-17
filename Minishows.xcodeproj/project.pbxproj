@@ -17,6 +17,7 @@
 		014FA3FB1A938B0E007235B9 /* SerieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014FA3F91A938B0E007235B9 /* SerieTableViewCell.xib */; };
 		014FA4001A938D9F007235B9 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3FF1A938D9F007235B9 /* TableViewDelegate.m */; };
 		014FA4021A939088007235B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014FA4011A939088007235B9 /* LaunchScreen.xib */; };
+		0157ADC81A93A20A001A938C /* SerieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0157ADC71A93A20A001A938C /* SerieService.m */; };
 		09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */; };
 		09EEE4B21A93877800C0FD7B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,8 @@
 		014FA3FE1A938D9F007235B9 /* TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewDelegate.h; path = Model/Delegates/TableViewDelegate.h; sourceTree = "<group>"; };
 		014FA3FF1A938D9F007235B9 /* TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewDelegate.m; path = Model/Delegates/TableViewDelegate.m; sourceTree = "<group>"; };
 		014FA4011A939088007235B9 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		0157ADC61A93A20A001A938C /* SerieService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SerieService.h; path = Model/Services/SerieService.h; sourceTree = "<group>"; };
+		0157ADC71A93A20A001A938C /* SerieService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SerieService.m; path = Model/Services/SerieService.m; sourceTree = "<group>"; };
 		09EEE4AE1A93877800C0FD7B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = SettingsView/SettingsViewController.h; sourceTree = "<group>"; };
 		09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = SettingsView/SettingsViewController.m; sourceTree = "<group>"; };
 		09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = SettingsView/SettingsViewController.xib; sourceTree = "<group>"; };
@@ -182,6 +185,7 @@
 		014FA3FC1A938D6C007235B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0157ADC21A939F9C001A938C /* Services */,
 				014FA3FD1A938D7C007235B9 /* Delegates */,
 			);
 			name = Model;
@@ -194,6 +198,15 @@
 				014FA3FF1A938D9F007235B9 /* TableViewDelegate.m */,
 			);
 			name = Delegates;
+			sourceTree = "<group>";
+		};
+		0157ADC21A939F9C001A938C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0157ADC61A93A20A001A938C /* SerieService.h */,
+				0157ADC71A93A20A001A938C /* SerieService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +314,7 @@
 				014FA4001A938D9F007235B9 /* TableViewDelegate.m in Sources */,
 				014FA3C81A938215007235B9 /* AppDelegate.m in Sources */,
 				014FA3FA1A938B0E007235B9 /* SerieTableViewCell.m in Sources */,
+				0157ADC81A93A20A001A938C /* SerieService.m in Sources */,
 				014FA3F41A93861F007235B9 /* TableViewViewController.m in Sources */,
 				014FA3C51A938215007235B9 /* main.m in Sources */,
 				09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */,

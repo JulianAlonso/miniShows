@@ -21,11 +21,24 @@
     
 }
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 200.0f;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 200.0f;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SerieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSerieCellId];
+    SerieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SerieTableViewCell class])];
     
-    
+    cell.titleLabel.text = @"Hello";
+    cell.imageView.image = [UIImage imageNamed:@"test"];
+    cell.descriptionLabel.text  = @"Description";
+    cell.redLabel.text = @"2 behind";
     
     return cell;
 }

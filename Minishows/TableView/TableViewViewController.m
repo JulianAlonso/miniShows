@@ -8,10 +8,13 @@
 
 #import "TableViewViewController.h"
 #import "SerieTableViewCell.h"
+#import "TableViewDelegate.h"
+#import "SettingsViewController.h"
 
 @interface TableViewViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *seriesTableView;
+@property (strong, nonatomic) TableViewDelegate *delegate;
 
 @end
 
@@ -20,13 +23,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
-    [self.seriesTableView registerClass:[SerieTableViewCell class] forCellReuseIdentifier:kSerieCellId];
+    [self initTableDelegate];
+    UINib *nib = [UINib nibWithNibName:@"SerieTableViewCell" bundle:[NSBundle mainBundle]];
+    [self.seriesTableView registerNib:nib forCellReuseIdentifier:NSStringFromClass([SerieTableViewCell class])];
     
+    self.seriesTableView.delegate = self.delegate;
+    self.seriesTableView.dataSource = self.delegate;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - InitProperties methods.
+- (void)initTableDelegate
+{
+    self.delegate = [[TableViewDelegate alloc] init];
+}
+#pragma mark - Action methods.
+
+- (IBAction)settingsButtonPressed:(id)sender
+{
+    SettingsViewController *svc = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:[NSBundle mainBundle]];
+    
+    [self presentViewController:svc animated: YES completion:nil];
 }
 
 /*

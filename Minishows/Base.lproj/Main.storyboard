@@ -15,11 +15,24 @@
                     <view key="view" contentMode="scaleToFill" id="4w6-eb-4gW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yxm-hc-sL2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DPk-jw-t57">
-                        <barButtonItem key="leftBarButtonItem" title="Settings" id="ih4-wF-3RK"/>
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="ih4-wF-3RK">
+                            <connections>
+                                <action selector="settingsButtonPressed:" destination="R8z-zA-swM" id="TZB-12-0bz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="seriesTableView" destination="Yxm-hc-sL2" id="2Pu-lb-Zxc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K23-No-BFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

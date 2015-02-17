@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-extern NSString *const kSerieCellId;
-
 @interface SerieTableViewCell : UITableViewCell
+
+@property (weak, nonatomic, readonly) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *redLabel;
 
 @end
