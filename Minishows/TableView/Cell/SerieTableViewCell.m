@@ -8,12 +8,11 @@
 
 #import "SerieTableViewCell.h"
 
-NSString *const kSerieCellId = @"SerieCellId";
-
 @implementation SerieTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (void)awakeFromNib
+{
+    self.imageView.layer.cornerRadius = self.imageView.bounds.size.height / 2;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
