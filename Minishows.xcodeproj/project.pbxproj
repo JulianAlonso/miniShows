@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		014FA3C51A938215007235B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3C41A938215007235B9 /* main.m */; };
 		014FA3C81A938215007235B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3C71A938215007235B9 /* AppDelegate.m */; };
-		014FA3CB1A938215007235B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3CA1A938215007235B9 /* ViewController.m */; };
 		014FA3CE1A938215007235B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014FA3CC1A938215007235B9 /* Main.storyboard */; };
 		014FA3D01A938215007235B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014FA3CF1A938215007235B9 /* Images.xcassets */; };
-		014FA3D31A938215007235B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014FA3D11A938215007235B9 /* LaunchScreen.xib */; };
 		014FA3DF1A938215007235B9 /* MinishowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3DE1A938215007235B9 /* MinishowsTests.m */; };
+		014FA3F41A93861F007235B9 /* TableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3F21A93861F007235B9 /* TableViewViewController.m */; };
+		014FA3FA1A938B0E007235B9 /* SerieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3F81A938B0E007235B9 /* SerieTableViewCell.m */; };
+		014FA3FB1A938B0E007235B9 /* SerieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014FA3F91A938B0E007235B9 /* SerieTableViewCell.xib */; };
+		014FA4001A938D9F007235B9 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3FF1A938D9F007235B9 /* TableViewDelegate.m */; };
+		014FA4021A939088007235B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014FA4011A939088007235B9 /* LaunchScreen.xib */; };
 		09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */; };
 		09EEE4B21A93877800C0FD7B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -34,14 +37,19 @@
 		014FA3C41A938215007235B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		014FA3C61A938215007235B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		014FA3C71A938215007235B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		014FA3C91A938215007235B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		014FA3CA1A938215007235B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		014FA3CD1A938215007235B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		014FA3CF1A938215007235B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		014FA3D21A938215007235B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		014FA3D81A938215007235B9 /* MinishowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinishowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		014FA3DD1A938215007235B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		014FA3DE1A938215007235B9 /* MinishowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinishowsTests.m; sourceTree = "<group>"; };
+		014FA3F11A93861F007235B9 /* TableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewViewController.h; path = TableView/TableViewViewController.h; sourceTree = "<group>"; };
+		014FA3F21A93861F007235B9 /* TableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewViewController.m; path = TableView/TableViewViewController.m; sourceTree = "<group>"; };
+		014FA3F71A938B0E007235B9 /* SerieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SerieTableViewCell.h; path = TableView/Cell/SerieTableViewCell.h; sourceTree = "<group>"; };
+		014FA3F81A938B0E007235B9 /* SerieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SerieTableViewCell.m; path = TableView/Cell/SerieTableViewCell.m; sourceTree = "<group>"; };
+		014FA3F91A938B0E007235B9 /* SerieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SerieTableViewCell.xib; path = TableView/Cell/SerieTableViewCell.xib; sourceTree = "<group>"; };
+		014FA3FE1A938D9F007235B9 /* TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewDelegate.h; path = Model/Delegates/TableViewDelegate.h; sourceTree = "<group>"; };
+		014FA3FF1A938D9F007235B9 /* TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewDelegate.m; path = Model/Delegates/TableViewDelegate.m; sourceTree = "<group>"; };
+		014FA4011A939088007235B9 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		09EEE4AE1A93877800C0FD7B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = SettingsView/SettingsViewController.h; sourceTree = "<group>"; };
 		09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = SettingsView/SettingsViewController.m; sourceTree = "<group>"; };
 		09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = SettingsView/SettingsViewController.xib; sourceTree = "<group>"; };
@@ -86,15 +94,14 @@
 		014FA3C11A938215007235B9 /* Minishows */ = {
 			isa = PBXGroup;
 			children = (
+				014FA3FC1A938D6C007235B9 /* Model */,
 				014FA3E81A9384D6007235B9 /* Views */,
 				014FA3C61A938215007235B9 /* AppDelegate.h */,
 				014FA3C71A938215007235B9 /* AppDelegate.m */,
-				014FA3C91A938215007235B9 /* ViewController.h */,
-				014FA3CA1A938215007235B9 /* ViewController.m */,
 				014FA3CC1A938215007235B9 /* Main.storyboard */,
 				014FA3CF1A938215007235B9 /* Images.xcassets */,
-				014FA3D11A938215007235B9 /* LaunchScreen.xib */,
 				014FA3C21A938215007235B9 /* Supporting Files */,
+				014FA4011A939088007235B9 /* LaunchScreen.xib */,
 			);
 			path = Minishows;
 			sourceTree = "<group>";
@@ -138,6 +145,9 @@
 		014FA3E91A9384DC007235B9 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				014FA3F61A938A6B007235B9 /* Cell */,
+				014FA3F11A93861F007235B9 /* TableViewViewController.h */,
+				014FA3F21A93861F007235B9 /* TableViewViewController.m */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -157,6 +167,33 @@
 			children = (
 			);
 			name = DeatilView;
+			sourceTree = "<group>";
+		};
+		014FA3F61A938A6B007235B9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				014FA3F71A938B0E007235B9 /* SerieTableViewCell.h */,
+				014FA3F81A938B0E007235B9 /* SerieTableViewCell.m */,
+				014FA3F91A938B0E007235B9 /* SerieTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		014FA3FC1A938D6C007235B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				014FA3FD1A938D7C007235B9 /* Delegates */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		014FA3FD1A938D7C007235B9 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				014FA3FE1A938D9F007235B9 /* TableViewDelegate.h */,
+				014FA3FF1A938D9F007235B9 /* TableViewDelegate.m */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				014FA3CE1A938215007235B9 /* Main.storyboard in Resources */,
-				014FA3D31A938215007235B9 /* LaunchScreen.xib in Resources */,
+				014FA4021A939088007235B9 /* LaunchScreen.xib in Resources */,
 				014FA3D01A938215007235B9 /* Images.xcassets in Resources */,
+				014FA3FB1A938B0E007235B9 /* SerieTableViewCell.xib in Resources */,
 				09EEE4B21A93877800C0FD7B /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,8 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				014FA3CB1A938215007235B9 /* ViewController.m in Sources */,
+				014FA4001A938D9F007235B9 /* TableViewDelegate.m in Sources */,
 				014FA3C81A938215007235B9 /* AppDelegate.m in Sources */,
+				014FA3FA1A938B0E007235B9 /* SerieTableViewCell.m in Sources */,
+				014FA3F41A93861F007235B9 /* TableViewViewController.m in Sources */,
 				014FA3C51A938215007235B9 /* main.m in Sources */,
 				09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */,
 			);
@@ -292,14 +332,6 @@
 				014FA3CD1A938215007235B9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		014FA3D11A938215007235B9 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				014FA3D21A938215007235B9 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
