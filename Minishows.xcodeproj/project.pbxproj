@@ -81,6 +81,7 @@
 		014FA3C11A938215007235B9 /* Minishows */ = {
 			isa = PBXGroup;
 			children = (
+				014FA3E81A9384D6007235B9 /* Views */,
 				014FA3C61A938215007235B9 /* AppDelegate.h */,
 				014FA3C71A938215007235B9 /* AppDelegate.m */,
 				014FA3C91A938215007235B9 /* ViewController.h */,
@@ -117,6 +118,37 @@
 				014FA3DD1A938215007235B9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		014FA3E81A9384D6007235B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				014FA3EB1A9384F8007235B9 /* DeatilView */,
+				014FA3EA1A9384E6007235B9 /* SettingsView */,
+				014FA3E91A9384DC007235B9 /* TableView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		014FA3E91A9384DC007235B9 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		014FA3EA1A9384E6007235B9 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SettingsView;
+			sourceTree = "<group>";
+		};
+		014FA3EB1A9384F8007235B9 /* DeatilView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DeatilView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
