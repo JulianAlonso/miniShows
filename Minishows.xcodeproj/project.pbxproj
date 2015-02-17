@@ -14,6 +14,8 @@
 		014FA3D01A938215007235B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014FA3CF1A938215007235B9 /* Images.xcassets */; };
 		014FA3D31A938215007235B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014FA3D11A938215007235B9 /* LaunchScreen.xib */; };
 		014FA3DF1A938215007235B9 /* MinishowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3DE1A938215007235B9 /* MinishowsTests.m */; };
+		09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */; };
+		09EEE4B21A93877800C0FD7B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		014FA3D81A938215007235B9 /* MinishowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinishowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		014FA3DD1A938215007235B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		014FA3DE1A938215007235B9 /* MinishowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinishowsTests.m; sourceTree = "<group>"; };
+		09EEE4AE1A93877800C0FD7B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = SettingsView/SettingsViewController.h; sourceTree = "<group>"; };
+		09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = SettingsView/SettingsViewController.m; sourceTree = "<group>"; };
+		09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = SettingsView/SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +145,9 @@
 		014FA3EA1A9384E6007235B9 /* SettingsView */ = {
 			isa = PBXGroup;
 			children = (
+				09EEE4AE1A93877800C0FD7B /* SettingsViewController.h */,
+				09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */,
+				09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */,
 			);
 			name = SettingsView;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 				014FA3CE1A938215007235B9 /* Main.storyboard in Resources */,
 				014FA3D31A938215007235B9 /* LaunchScreen.xib in Resources */,
 				014FA3D01A938215007235B9 /* Images.xcassets in Resources */,
+				09EEE4B21A93877800C0FD7B /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +263,7 @@
 				014FA3CB1A938215007235B9 /* ViewController.m in Sources */,
 				014FA3C81A938215007235B9 /* AppDelegate.m in Sources */,
 				014FA3C51A938215007235B9 /* main.m in Sources */,
+				09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +454,7 @@
 				014FA3E41A938215007235B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		014FA3E51A938215007235B9 /* Build configuration list for PBXNativeTarget "MinishowsTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +463,7 @@
 				014FA3E71A938215007235B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
