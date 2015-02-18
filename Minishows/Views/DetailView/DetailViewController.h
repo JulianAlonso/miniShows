@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Serie.h"
 
 @interface DetailViewController : UIViewController
+
+@property (nonatomic, strong) Serie *serie;
 
 @end

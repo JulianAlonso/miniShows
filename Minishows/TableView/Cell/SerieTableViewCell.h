@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 @interface SerieTableViewCell : UITableViewCell
 
-@property (weak, nonatomic, readonly) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
-@property (weak, nonatomic) IBOutlet UILabel *redLabel;
+@property (weak, nonatomic) UIImageView *serieImageView;
+@property (weak, nonatomic) IBOutlet UILabel *serieTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *serieDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *serieRedLabel;
 
 @end

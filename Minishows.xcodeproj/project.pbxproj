@@ -20,6 +20,7 @@
 		0157ADC81A93A20A001A938C /* SerieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0157ADC71A93A20A001A938C /* SerieService.m */; };
 		01CDE57B1A93C4A800885A39 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CDE5791A93C4A800885A39 /* DetailViewController.m */; };
 		01CDE57C1A93C4A800885A39 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CDE57A1A93C4A800885A39 /* DetailViewController.xib */; };
+		01CFD1B71A94E9FD00E53E39 /* Serie.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CFD1B61A94E9FD00E53E39 /* Serie.m */; };
 		0965B93F1A93B0EF00516408 /* CellForSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0965B93E1A93B0EF00516408 /* CellForSettings.xib */; };
 		09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */; };
 		09EEE4B21A93877800C0FD7B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */; };
@@ -59,6 +60,8 @@
 		01CDE5781A93C4A800885A39 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Views/DetailView/DetailViewController.h; sourceTree = "<group>"; };
 		01CDE5791A93C4A800885A39 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Views/DetailView/DetailViewController.m; sourceTree = "<group>"; };
 		01CDE57A1A93C4A800885A39 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = Views/DetailView/DetailViewController.xib; sourceTree = "<group>"; };
+		01CFD1B51A94E9FD00E53E39 /* Serie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Serie.h; path = Model/Entity/Serie.h; sourceTree = "<group>"; };
+		01CFD1B61A94E9FD00E53E39 /* Serie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Serie.m; path = Model/Entity/Serie.m; sourceTree = "<group>"; };
 		0965B93E1A93B0EF00516408 /* CellForSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellForSettings.xib; sourceTree = "<group>"; };
 		09EEE4AE1A93877800C0FD7B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = SettingsView/SettingsViewController.h; sourceTree = "<group>"; };
 		09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = SettingsView/SettingsViewController.m; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 		014FA3FC1A938D6C007235B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				01CFD1B41A94E9E700E53E39 /* Entity */,
 				0157ADC21A939F9C001A938C /* Services */,
 				014FA3FD1A938D7C007235B9 /* Delegates */,
 			);
@@ -218,6 +222,15 @@
 				0157ADC71A93A20A001A938C /* SerieService.m */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		01CFD1B41A94E9E700E53E39 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				01CFD1B51A94E9FD00E53E39 /* Serie.h */,
+				01CFD1B61A94E9FD00E53E39 /* Serie.m */,
+			);
+			name = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +343,7 @@
 				01CDE57B1A93C4A800885A39 /* DetailViewController.m in Sources */,
 				0157ADC81A93A20A001A938C /* SerieService.m in Sources */,
 				014FA3F41A93861F007235B9 /* TableViewViewController.m in Sources */,
+				01CFD1B71A94E9FD00E53E39 /* Serie.m in Sources */,
 				014FA3C51A938215007235B9 /* main.m in Sources */,
 				09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */,
 			);

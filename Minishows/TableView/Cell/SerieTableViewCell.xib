@@ -83,10 +83,10 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="descriptionLabel" destination="7fQ-Jy-mVI" id="X6y-uZ-P8o"/>
-                <outlet property="imageView" destination="vo5-Zk-A1J" id="AFS-Ln-d1S"/>
-                <outlet property="redLabel" destination="b8N-8k-5x6" id="TYn-Q1-8rE"/>
-                <outlet property="titleLabel" destination="Dkg-h4-7RI" id="FrH-vB-i8F"/>
+                <outlet property="serieDescriptionLabel" destination="7fQ-Jy-mVI" id="5Yg-YO-FcM"/>
+                <outlet property="serieImageView" destination="vo5-Zk-A1J" id="vtj-yh-TAI"/>
+                <outlet property="serieRedLabel" destination="b8N-8k-5x6" id="e2T-zR-APb"/>
+                <outlet property="serieTitleLabel" destination="Dkg-h4-7RI" id="Pln-FX-NQY"/>
             </connections>
             <point key="canvasLocation" x="296" y="306"/>
         </tableViewCell>

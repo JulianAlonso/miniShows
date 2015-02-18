@@ -10,8 +10,9 @@
 
 @interface DetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *description1;
-@property (weak, nonatomic) IBOutlet UILabel *description2;
+@property (weak, nonatomic) IBOutlet UIImageView *serieImageView;
+@property (weak, nonatomic) IBOutlet UILabel *generalInfoLabel;
+@property (weak, nonatomic) IBOutlet UILabel *overviewLabel;
 
 @end
 
@@ -20,8 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self configureLabel:self.description1];
-//    [self configureLabel:self.description2];
+    [self loadProperties];
     
 }
 
@@ -31,20 +31,12 @@
 }
 
 #pragma mark - Own methods.
-- (void)configureLabel:(UILabel *)label
+- (void)loadProperties
 {
-    label.numberOfLines = 0;
-    [label sizeToFit];
+    self.serieImageView.image = [UIImage imageNamed:self.serie.imageName];
+    self.generalInfoLabel.text = self.serie.generalInfo;
+    self.overviewLabel.text = self.serie.overview;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

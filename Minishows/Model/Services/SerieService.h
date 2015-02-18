@@ -10,4 +10,6 @@
 
 @interface SerieService : NSObject
 
+- (NSArray *)findAll;
+
 @end

@@ -9,8 +9,33 @@
 #import "TableViewDelegate.h"
 #import "SerieTableViewCell.h"
 #import "DetailViewController.h"
+#import "SerieService.h"
+#import "Serie.h"
+
+@interface TableViewDelegate ()
+
+@property (nonatomic, strong) SerieService *service;
+
+@property (nonatomic, strong) NSArray *allSeries;
+
+@end
 
 @implementation TableViewDelegate
+
+#pragma mark - Inits methods.
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        self.service = [[SerieService alloc] init];
+        
+        self.allSeries = [self.service findAll];
+    }
+    
+    return self;
+}
 
 #pragma mark - TableView Delegate methods.
 
@@ -18,13 +43,15 @@
 {
     DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:[NSBundle mainBundle]];
     
+    detailViewController.serie = self.allSeries[indexPath.row];
+    
     [self.presenterController.navigationController pushViewController:detailViewController animated:YES];
 }
 
 #pragma mark - TableView DataSource methods.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return self.allSeries.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -36,12 +63,12 @@
 {
     SerieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SerieTableViewCell class])];
     
-    cell.titleLabel.text = @"Hello";
-    cell.imageView.image = [UIImage imageNamed:@"breaking"];
-    cell.descriptionLabel.text  = @"Description";
-    cell.redLabel.text = @"2 behind";
+    Serie *serie = self.allSeries[indexPath.row];
     
-    NSLog(@"height: %@", NSStringFromCGRect(cell.imageView.frame));
+    cell.serieTitleLabel.text = serie.name;
+    cell.serieImageView.image = [UIImage imageNamed:serie.imageName];
+    cell.serieDescriptionLabel.text  = serie.generalDescription;
+    cell.serieRedLabel.text = @"2 behind";
     
     [cell layoutSubviews];
     
