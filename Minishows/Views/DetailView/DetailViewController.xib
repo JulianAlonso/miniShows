@@ -8,7 +8,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
             <connections>
                 <outlet property="generalInfoLabel" destination="vmc-pk-9fI" id="9Ns-vi-J2g"/>
+                <outlet property="heightConstraint" destination="Hvx-ym-V5C" id="gBi-so-CNT"/>
                 <outlet property="overviewLabel" destination="wXn-VE-Wuf" id="nN7-ud-R9b"/>
+                <outlet property="scrollView" destination="Md1-ZC-r2V" id="9kl-Nu-uAV"/>
                 <outlet property="serieImageView" destination="1zd-NX-bVI" id="Dzl-rK-z4X"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,14 +23,20 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-ZC-r2V">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breakingbad" translatesAutoresizingMaskIntoConstraints="NO" id="1zd-NX-bVI">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breakingbad" translatesAutoresizingMaskIntoConstraints="NO" id="1zd-NX-bVI">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="338"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="1zd-NX-bVI" secondAttribute="height" multiplier="16:9" id="Hal-iD-vx7"/>
+                                <constraint firstAttribute="height" constant="338" id="Hvx-ym-V5C"/>
                             </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Hal-iD-vx7"/>
+                                </mask>
+                            </variation>
                             <variation key="heightClass=compact">
                                 <mask key="constraints">
-                                    <include reference="Hal-iD-vx7"/>
+                                    <exclude reference="Hal-iD-vx7"/>
                                 </mask>
                             </variation>
                         </imageView>
