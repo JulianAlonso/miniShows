@@ -20,6 +20,7 @@
 		0157ADC81A93A20A001A938C /* SerieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0157ADC71A93A20A001A938C /* SerieService.m */; };
 		01CDE57B1A93C4A800885A39 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CDE5791A93C4A800885A39 /* DetailViewController.m */; };
 		01CDE57C1A93C4A800885A39 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CDE57A1A93C4A800885A39 /* DetailViewController.xib */; };
+		0965B93F1A93B0EF00516408 /* CellForSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0965B93E1A93B0EF00516408 /* CellForSettings.xib */; };
 		09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */; };
 		09EEE4B21A93877800C0FD7B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		01CDE5781A93C4A800885A39 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Views/DetailView/DetailViewController.h; sourceTree = "<group>"; };
 		01CDE5791A93C4A800885A39 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Views/DetailView/DetailViewController.m; sourceTree = "<group>"; };
 		01CDE57A1A93C4A800885A39 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = Views/DetailView/DetailViewController.xib; sourceTree = "<group>"; };
+		0965B93E1A93B0EF00516408 /* CellForSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellForSettings.xib; sourceTree = "<group>"; };
 		09EEE4AE1A93877800C0FD7B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = SettingsView/SettingsViewController.h; sourceTree = "<group>"; };
 		09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = SettingsView/SettingsViewController.m; sourceTree = "<group>"; };
 		09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = SettingsView/SettingsViewController.xib; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				09EEE4AE1A93877800C0FD7B /* SettingsViewController.h */,
 				09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */,
 				09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */,
+				0965B93E1A93B0EF00516408 /* CellForSettings.xib */,
 			);
 			name = SettingsView;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0965B93F1A93B0EF00516408 /* CellForSettings.xib in Resources */,
 				014FA3CE1A938215007235B9 /* Main.storyboard in Resources */,
 				01CDE57C1A93C4A800885A39 /* DetailViewController.xib in Resources */,
 				014FA4021A939088007235B9 /* LaunchScreen.xib in Resources */,
