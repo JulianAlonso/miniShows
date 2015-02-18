@@ -10,18 +10,31 @@
 
 @interface DetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *description1;
+@property (weak, nonatomic) IBOutlet UILabel *description2;
+
 @end
 
 @implementation DetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+//    [self configureLabel:self.description1];
+//    [self configureLabel:self.description2];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Own methods.
+- (void)configureLabel:(UILabel *)label
+{
+    label.numberOfLines = 0;
+    [label sizeToFit];
 }
 
 /*
