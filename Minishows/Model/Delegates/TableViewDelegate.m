@@ -8,10 +8,18 @@
 
 #import "TableViewDelegate.h"
 #import "SerieTableViewCell.h"
+#import "DetailViewController.h"
 
 @implementation TableViewDelegate
 
 #pragma mark - TableView Delegate methods.
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:[NSBundle mainBundle]];
+    
+    [self.presenterController.navigationController pushViewController:detailViewController animated:YES];
+}
 
 #pragma mark - TableView DataSource methods.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -29,7 +37,7 @@
     SerieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SerieTableViewCell class])];
     
     cell.titleLabel.text = @"Hello";
-    //cell.imageView.image = [UIImage imageNamed:@"brakingbad"];
+    cell.imageView.image = [UIImage imageNamed:@"breaking"];
     cell.descriptionLabel.text  = @"Description";
     cell.redLabel.text = @"2 behind";
     

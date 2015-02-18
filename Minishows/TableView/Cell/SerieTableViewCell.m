@@ -17,6 +17,7 @@
 }
 
 - (void)layoutSubviews {
+    [super layoutSubviews];
     [self layoutIfNeeded];
 }
 

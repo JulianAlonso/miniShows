@@ -18,6 +18,8 @@
 		014FA4001A938D9F007235B9 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3FF1A938D9F007235B9 /* TableViewDelegate.m */; };
 		014FA4021A939088007235B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014FA4011A939088007235B9 /* LaunchScreen.xib */; };
 		0157ADC81A93A20A001A938C /* SerieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0157ADC71A93A20A001A938C /* SerieService.m */; };
+		01CDE57B1A93C4A800885A39 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CDE5791A93C4A800885A39 /* DetailViewController.m */; };
+		01CDE57C1A93C4A800885A39 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CDE57A1A93C4A800885A39 /* DetailViewController.xib */; };
 		09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */; };
 		09EEE4B21A93877800C0FD7B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,9 @@
 		014FA4011A939088007235B9 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		0157ADC61A93A20A001A938C /* SerieService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SerieService.h; path = Model/Services/SerieService.h; sourceTree = "<group>"; };
 		0157ADC71A93A20A001A938C /* SerieService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SerieService.m; path = Model/Services/SerieService.m; sourceTree = "<group>"; };
+		01CDE5781A93C4A800885A39 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Views/DetailView/DetailViewController.h; sourceTree = "<group>"; };
+		01CDE5791A93C4A800885A39 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Views/DetailView/DetailViewController.m; sourceTree = "<group>"; };
+		01CDE57A1A93C4A800885A39 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = Views/DetailView/DetailViewController.xib; sourceTree = "<group>"; };
 		09EEE4AE1A93877800C0FD7B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = SettingsView/SettingsViewController.h; sourceTree = "<group>"; };
 		09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = SettingsView/SettingsViewController.m; sourceTree = "<group>"; };
 		09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = SettingsView/SettingsViewController.xib; sourceTree = "<group>"; };
@@ -168,6 +173,9 @@
 		014FA3EB1A9384F8007235B9 /* DeatilView */ = {
 			isa = PBXGroup;
 			children = (
+				01CDE5781A93C4A800885A39 /* DetailViewController.h */,
+				01CDE5791A93C4A800885A39 /* DetailViewController.m */,
+				01CDE57A1A93C4A800885A39 /* DetailViewController.xib */,
 			);
 			name = DeatilView;
 			sourceTree = "<group>";
@@ -290,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				014FA3CE1A938215007235B9 /* Main.storyboard in Resources */,
+				01CDE57C1A93C4A800885A39 /* DetailViewController.xib in Resources */,
 				014FA4021A939088007235B9 /* LaunchScreen.xib in Resources */,
 				014FA3D01A938215007235B9 /* Images.xcassets in Resources */,
 				014FA3FB1A938B0E007235B9 /* SerieTableViewCell.xib in Resources */,
@@ -314,6 +323,7 @@
 				014FA4001A938D9F007235B9 /* TableViewDelegate.m in Sources */,
 				014FA3C81A938215007235B9 /* AppDelegate.m in Sources */,
 				014FA3FA1A938B0E007235B9 /* SerieTableViewCell.m in Sources */,
+				01CDE57B1A93C4A800885A39 /* DetailViewController.m in Sources */,
 				0157ADC81A93A20A001A938C /* SerieService.m in Sources */,
 				014FA3F41A93861F007235B9 /* TableViewViewController.m in Sources */,
 				014FA3C51A938215007235B9 /* main.m in Sources */,

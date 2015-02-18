@@ -27,6 +27,8 @@
     UINib *nib = [UINib nibWithNibName:@"SerieTableViewCell" bundle:[NSBundle mainBundle]];
     [self.seriesTableView registerNib:nib forCellReuseIdentifier:NSStringFromClass([SerieTableViewCell class])];
     
+    self.delegate.presenterController = self;
+    
     self.seriesTableView.delegate = self.delegate;
     self.seriesTableView.dataSource = self.delegate;
 }
