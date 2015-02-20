@@ -12,7 +12,7 @@
 		014FA3CE1A938215007235B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014FA3CC1A938215007235B9 /* Main.storyboard */; };
 		014FA3D01A938215007235B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014FA3CF1A938215007235B9 /* Images.xcassets */; };
 		014FA3DF1A938215007235B9 /* MinishowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3DE1A938215007235B9 /* MinishowsTests.m */; };
-		014FA3F41A93861F007235B9 /* TableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3F21A93861F007235B9 /* TableViewViewController.m */; };
+		014FA3F41A93861F007235B9 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3F21A93861F007235B9 /* MainTableViewController.m */; };
 		014FA3FA1A938B0E007235B9 /* SerieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3F81A938B0E007235B9 /* SerieTableViewCell.m */; };
 		014FA3FB1A938B0E007235B9 /* SerieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014FA3F91A938B0E007235B9 /* SerieTableViewCell.xib */; };
 		014FA4001A938D9F007235B9 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 014FA3FF1A938D9F007235B9 /* TableViewDelegate.m */; };
@@ -21,6 +21,8 @@
 		01CDE57B1A93C4A800885A39 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CDE5791A93C4A800885A39 /* DetailViewController.m */; };
 		01CDE57C1A93C4A800885A39 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CDE57A1A93C4A800885A39 /* DetailViewController.xib */; };
 		01CFD1B71A94E9FD00E53E39 /* Serie.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CFD1B61A94E9FD00E53E39 /* Serie.m */; };
+		01F006521A9747C1003D47D5 /* NavigationCustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F006511A9747C1003D47D5 /* NavigationCustomTransition.m */; };
+		01F006551A9747CD003D47D5 /* ModalCustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F006541A9747CD003D47D5 /* ModalCustomTransition.m */; };
 		0965B93F1A93B0EF00516408 /* CellForSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0965B93E1A93B0EF00516408 /* CellForSettings.xib */; };
 		09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */; };
 		09EEE4B21A93877800C0FD7B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EEE4B01A93877800C0FD7B /* SettingsViewController.xib */; };
@@ -47,8 +49,8 @@
 		014FA3D81A938215007235B9 /* MinishowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinishowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		014FA3DD1A938215007235B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		014FA3DE1A938215007235B9 /* MinishowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinishowsTests.m; sourceTree = "<group>"; };
-		014FA3F11A93861F007235B9 /* TableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewViewController.h; path = TableView/TableViewViewController.h; sourceTree = "<group>"; };
-		014FA3F21A93861F007235B9 /* TableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewViewController.m; path = TableView/TableViewViewController.m; sourceTree = "<group>"; };
+		014FA3F11A93861F007235B9 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTableViewController.h; path = TableView/MainTableViewController.h; sourceTree = "<group>"; };
+		014FA3F21A93861F007235B9 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTableViewController.m; path = TableView/MainTableViewController.m; sourceTree = "<group>"; };
 		014FA3F71A938B0E007235B9 /* SerieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SerieTableViewCell.h; path = TableView/Cell/SerieTableViewCell.h; sourceTree = "<group>"; };
 		014FA3F81A938B0E007235B9 /* SerieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SerieTableViewCell.m; path = TableView/Cell/SerieTableViewCell.m; sourceTree = "<group>"; };
 		014FA3F91A938B0E007235B9 /* SerieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SerieTableViewCell.xib; path = TableView/Cell/SerieTableViewCell.xib; sourceTree = "<group>"; };
@@ -62,6 +64,10 @@
 		01CDE57A1A93C4A800885A39 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = Views/DetailView/DetailViewController.xib; sourceTree = "<group>"; };
 		01CFD1B51A94E9FD00E53E39 /* Serie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Serie.h; path = Model/Entity/Serie.h; sourceTree = "<group>"; };
 		01CFD1B61A94E9FD00E53E39 /* Serie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Serie.m; path = Model/Entity/Serie.m; sourceTree = "<group>"; };
+		01F006501A9747C1003D47D5 /* NavigationCustomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationCustomTransition.h; path = Views/Transitions/NavigationCustomTransition.h; sourceTree = "<group>"; };
+		01F006511A9747C1003D47D5 /* NavigationCustomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationCustomTransition.m; path = Views/Transitions/NavigationCustomTransition.m; sourceTree = "<group>"; };
+		01F006531A9747CD003D47D5 /* ModalCustomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalCustomTransition.h; sourceTree = "<group>"; };
+		01F006541A9747CD003D47D5 /* ModalCustomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalCustomTransition.m; sourceTree = "<group>"; };
 		0965B93E1A93B0EF00516408 /* CellForSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellForSettings.xib; sourceTree = "<group>"; };
 		09EEE4AE1A93877800C0FD7B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = SettingsView/SettingsViewController.h; sourceTree = "<group>"; };
 		09EEE4AF1A93877800C0FD7B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = SettingsView/SettingsViewController.m; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 		014FA3E81A9384D6007235B9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				01F0064F1A974767003D47D5 /* Transitions */,
 				014FA3EB1A9384F8007235B9 /* DeatilView */,
 				014FA3EA1A9384E6007235B9 /* SettingsView */,
 				014FA3E91A9384DC007235B9 /* TableView */,
@@ -159,8 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				014FA3F61A938A6B007235B9 /* Cell */,
-				014FA3F11A93861F007235B9 /* TableViewViewController.h */,
-				014FA3F21A93861F007235B9 /* TableViewViewController.m */,
+				014FA3F11A93861F007235B9 /* MainTableViewController.h */,
+				014FA3F21A93861F007235B9 /* MainTableViewController.m */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -231,6 +238,17 @@
 				01CFD1B61A94E9FD00E53E39 /* Serie.m */,
 			);
 			name = Entity;
+			sourceTree = "<group>";
+		};
+		01F0064F1A974767003D47D5 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				01F006501A9747C1003D47D5 /* NavigationCustomTransition.h */,
+				01F006511A9747C1003D47D5 /* NavigationCustomTransition.m */,
+				01F006531A9747CD003D47D5 /* ModalCustomTransition.h */,
+				01F006541A9747CD003D47D5 /* ModalCustomTransition.m */,
+			);
+			name = Transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,10 +360,12 @@
 				014FA3FA1A938B0E007235B9 /* SerieTableViewCell.m in Sources */,
 				01CDE57B1A93C4A800885A39 /* DetailViewController.m in Sources */,
 				0157ADC81A93A20A001A938C /* SerieService.m in Sources */,
-				014FA3F41A93861F007235B9 /* TableViewViewController.m in Sources */,
+				01F006521A9747C1003D47D5 /* NavigationCustomTransition.m in Sources */,
+				014FA3F41A93861F007235B9 /* MainTableViewController.m in Sources */,
 				01CFD1B71A94E9FD00E53E39 /* Serie.m in Sources */,
 				014FA3C51A938215007235B9 /* main.m in Sources */,
 				09EEE4B11A93877800C0FD7B /* SettingsViewController.m in Sources */,
+				01F006551A9747CD003D47D5 /* ModalCustomTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,13 +11,14 @@
 @interface DetailViewController () <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIImageView *serieImageView;
 @property (weak, nonatomic) IBOutlet UILabel *generalInfoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *overviewLabel;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightConstraint;
+@property (weak, nonatomic) IBOutlet UIView *buttonsView;
 
 @property (assign, nonatomic) CGFloat originalConstant;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *buttonsViewTopConstraint;
 
 @end
 
@@ -72,8 +73,31 @@
         {
             self.heightConstraint.constant += 1;
         }
+    }
+    
+    CGPoint point = [self.view convertPoint:self.buttonsView.frame.origin fromView:self.scrollView];
+    
+    NSLayoutConstraint  *secondConstraint = [NSLayoutConstraint constraintWithItem:self.buttonsView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.scrollView attribute:NSLayoutAttributeTop multiplier:1 constant:64];
+    if (point.y < 64)
+    {
+//        CGSize size = self.scrollView.frame.size;
+        [self.scrollView removeConstraint:self.buttonsViewTopConstraint];
+        [self.scrollView addConstraint:secondConstraint];
+        
+//        self.buttonsView.frame = CGRectMake(0, 0, CGRectGetWidth(self.buttonsView.frame), CGRectGetHeight(self.buttonsView.frame));
+//        self.scrollView.frame = CGRectMake(0, 0, size.width, size.height);
 
-        NSLog(@"Diferencia: %f", diferencia);
+        
+        NSLog(@"buttons frame %@", NSStringFromCGRect(self.buttonsView.frame));
+        
+        NSLog(@"Ha pasado de la barra");
+    }
+    else
+    {
+        [self.scrollView removeConstraint:secondConstraint];
+        [self.scrollView addConstraint:self.buttonsViewTopConstraint];
+        
+//        [self.scrollView layoutIfNeeded];
     }
     
 }

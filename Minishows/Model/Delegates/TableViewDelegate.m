@@ -7,10 +7,11 @@
 //
 
 #import "TableViewDelegate.h"
-#import "SerieTableViewCell.h"
 #import "DetailViewController.h"
 #import "SerieService.h"
 #import "Serie.h"
+#import "NavigationCustomTransition.h"
+#import "MainTableViewController.h"
 
 @interface TableViewDelegate ()
 
@@ -45,7 +46,7 @@
     
     detailViewController.serie = self.allSeries[indexPath.row];
     
-    [self.presenterController.navigationController pushViewController:detailViewController animated:YES];
+    [self.mainTableViewController.navigationController pushViewController:detailViewController animated:YES];
 }
 
 #pragma mark - TableView DataSource methods.

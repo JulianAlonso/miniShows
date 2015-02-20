@@ -11,6 +11,7 @@
 
 @interface DetailViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *serieImageView;
 @property (nonatomic, strong) Serie *serie;
 
 @end

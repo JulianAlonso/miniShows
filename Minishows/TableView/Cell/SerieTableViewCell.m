@@ -13,7 +13,7 @@
 - (void)awakeFromNib
 {
     self.serieImageView.layer.cornerRadius = self.serieImageView.bounds.size.height / 2;
-    
+    self.clipsToBounds = NO;
 }
 
 - (void)layoutSubviews {

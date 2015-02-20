@@ -7,7 +7,8 @@
 //
 #import <UIKit/UIKit.h>
 
+@interface MainTableViewController : UIViewController
 
-@interface TableViewViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *seriesTableView;
 
 @end

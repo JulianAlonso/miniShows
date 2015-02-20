@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qis-V9-u8o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qis-V9-u8o">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View View Controller-->
+        <!--Main Table View Controller-->
         <scene sceneID="nvw-vK-p8L">
             <objects>
-                <viewController id="R8z-zA-swM" customClass="TableViewViewController" sceneMemberID="viewController">
+                <viewController id="R8z-zA-swM" customClass="MainTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZxW-0t-f8D"/>
                         <viewControllerLayoutGuide type="bottom" id="d3l-c0-1PK"/>
@@ -24,10 +23,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Yxm-hc-sL2" firstAttribute="leading" secondItem="4w6-eb-4gW" secondAttribute="leadingMargin" constant="-16" id="DRk-it-rhP"/>
-                            <constraint firstItem="d3l-c0-1PK" firstAttribute="top" secondItem="Yxm-hc-sL2" secondAttribute="bottom" id="Inr-4c-QkO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Yxm-hc-sL2" secondAttribute="trailing" constant="-16" id="nxW-Mu-9zR"/>
-                            <constraint firstItem="Yxm-hc-sL2" firstAttribute="top" secondItem="4w6-eb-4gW" secondAttribute="topMargin" id="vux-54-xGJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Yxm-hc-sL2" secondAttribute="trailing" id="2b8-0Y-nJI"/>
+                            <constraint firstItem="Yxm-hc-sL2" firstAttribute="leading" secondItem="4w6-eb-4gW" secondAttribute="leading" id="LIO-Rt-emB"/>
+                            <constraint firstItem="d3l-c0-1PK" firstAttribute="top" secondItem="Yxm-hc-sL2" secondAttribute="bottom" id="LZd-B9-3Kl"/>
+                            <constraint firstItem="Yxm-hc-sL2" firstAttribute="top" secondItem="4w6-eb-4gW" secondAttribute="top" id="uNd-m9-WZN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DPk-jw-t57">

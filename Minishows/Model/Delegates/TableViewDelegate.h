@@ -6,11 +6,15 @@
 //  Copyright (c) 2015 IronHack. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "TableViewViewController.h"
+#import "SerieTableViewCell.h"
+
+@class MainTableViewController;
+
 @interface TableViewDelegate : NSObject <UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) TableViewViewController *presenterController;
+@property (nonatomic, strong) MainTableViewController *mainTableViewController;
 
 @end
+
+
